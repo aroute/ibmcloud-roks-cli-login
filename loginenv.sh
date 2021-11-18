@@ -1,5 +1,5 @@
 #!/bin/bash
-## ITZ-V2 (TechZone Account)
+## My IBM Cloud Account
 export IBMCLOUD_APIKEY=<my API key>
 export IBMCLOUD_ACCOUNT=<BSS ID>
 export IBMCLOUD_REGION=us-east
