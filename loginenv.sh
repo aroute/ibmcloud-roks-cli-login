@@ -1,9 +1,9 @@
 #!/bin/bash
 ## ITZ-V2 (TechZone Account)
-export IBMCLOUD_API_KEY=<my API key>
-export IBM_CLOUD_ACCOUNT=<BSS ID>
-export IBM_CLOUD_REGION=us-east
-export IBM_CLOUD_OPENSHIFT_CLUSTER_ID=<Cluster ID>
+export IBMCLOUD_APIKEY=<my API key>
+export IBMCLOUD_ACCOUNT=<BSS ID>
+export IBMCLOUD_REGION=us-east
+export IBMCLOUD_OCP_CLUSTERID=<Cluster ID>
 
 
 # IBM Cloud Regions
