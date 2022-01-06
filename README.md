@@ -12,12 +12,18 @@ If this is your first time going through this, you most likely do not have an AP
 ibmcloud iam api-key-create <name>
 ```
 ## Step 3
+```shell
+cd roks-login
+```
+```shell
+chmod +x *.sh
+```
 Edit `loginenv.sh` script and fill in your respective information.
 ```console
 ## My IBM Cloud Account
 export IBMCLOUD_APIKEY=<your API key, retrieved above>
 export IBMCLOUD_ACCOUNT=<locate your account, or BSS ID, found under Manage - Account drop-down>
-export IBMCLOUD_REGION=<cluster's region, for example, us-east>
+export IBMCLOUD_REGION=<cluster's region, for example - us-east - see the list of other regions below>
 export IBMCLOUD_OCP_CLUSTERID=<your ROKS cluster ID>
 ```
 ## Step 4
@@ -25,3 +31,20 @@ Log in to your ROKS cluster.
 ```shell
 ./login.sh
 ```
+
+### Appendix A
+
+<!-- https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones#zones-mz
+1. au-syd
+2. in-che
+3. jp-osa
+4. jp-tok
+5. kr-seo
+6. eu-de
+7. eu-gb
+8. ca-tor
+9. us-south
+10. us-south-test
+11. us-east
+12. br-sao
+-->
