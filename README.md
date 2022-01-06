@@ -34,7 +34,7 @@ Log in to your ROKS cluster.
 
 ### Appendix A
 
-<!-- https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones#zones-mz
+https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones#zones-mz
 1. au-syd
 2. in-che
 3. jp-osa
@@ -47,4 +47,4 @@ Log in to your ROKS cluster.
 10. us-south-test
 11. us-east
 12. br-sao
--->
+
