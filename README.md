@@ -33,6 +33,13 @@ Log in to your ROKS cluster.
 ./login.sh
 ```
 
+## Troubleshooting
+
+You may get the following error if you run this on MacOS: `./login.sh: line 3: realpath: command not found`. Solution is to install `coreutils`. 
+```
+brew install coreutils
+```
+
 ### Appendix A
 
 https://cloud.ibm.com/docs/containers?topic=containers-regions-and-zones#zones-mz
