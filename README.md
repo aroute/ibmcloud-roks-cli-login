@@ -35,9 +35,13 @@ Log in to your ROKS cluster.
 
 ## Troubleshooting
 
-You may get the following error if you run this on MacOS: `./login.sh: line 3: realpath: command not found`. Solution is to install `coreutils`. 
+1. You may get the following error if you run this on MacOS: `./login.sh: line 3: realpath: command not found`. Solution is to install `coreutils`. 
 ```
 brew install coreutils
+```
+2. You may get an error logging in if the container-service plugin is not installed on your computer. Install it with this command.
+```
+ibmcloud plugin install container-service -r 'IBM Cloud'
 ```
 
 ### Appendix A
