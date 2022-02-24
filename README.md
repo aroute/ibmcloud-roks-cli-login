@@ -1,7 +1,9 @@
 # ibmcloud-roks-cli-login
 A quick, two file script to log in to IBM Managed Hosted OpenShift via CLI, using API key. 
 
-This solution assumes you already have `ibmcloud` CLI installed on your computer (MacOS or Linux). Follow [this guide](https://cloud.ibm.com/docs/cli?topic=cli-getting-started) if you need to install `ibmcloud` CLI.
+This solution assumes you already have `ibmcloud` CLI installed on your computer (MacOS, Linux or Windows). Follow [this guide](https://cloud.ibm.com/docs/cli?topic=cli-getting-started) if you need to install `ibmcloud` CLI.
+
+Use win_loginenv.cmd and win_login.bat if you are on Windows.
 
 ## Step 1
 Git clone this repo to the root of your directory.
