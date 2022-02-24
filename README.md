@@ -1,19 +1,19 @@
 # ibmcloud-roks-cli-login
-A quick, two file script to log in to IBM Managed Hosted OpenShift via CLI, using API key. 
+A quick, two file script to log in to IBM Managed Hosted OpenShift via CLI, using an API key. 
 
 This solution assumes you already have `ibmcloud` CLI installed on your computer (MacOS, Linux or Windows). Follow [this guide](https://cloud.ibm.com/docs/cli?topic=cli-getting-started) if you need to install `ibmcloud` CLI.
 
 Use win_loginenv.cmd and win_login.bat if you are on Windows.
 
 ## Step 1
-Git clone this repo to the root of your directory.
+Git clone this repo to the root of your directory. For Windows, download the ZIP file and extract.
 ```shell
 git clone https://github.com/aroute/roks-login.git
 ```
 ## Step 2
 
 ### If you do not already have an API key
-If you are doing this for the first time, you most likely do not have an API key for your IBM Cloud account. To begin, log in to your account using `ibmcloud login` command. If you are an IBMer, use the `ibmcloud login --sso` command. Second, create an API key for your account level (see below). Replace `<name>` with a name that you can recognize for your IBM Cloud account. For example, apikey-TZv2-aa. It should be noted that this is a one-time activity per account. So save your API key somewhere safe for the future. Do not create this for the same account again.
+If you are doing this for the very first time, you most likely do not have an API key for your IBM Cloud account. To begin, log in to your account using `ibmcloud login` command. If you are an IBMer, use the `ibmcloud login --sso` command. Second, create an API key for your respective IBM Cloud account (see below mentioned command). Replace `<name>` with a name that you can recognize for your IBM Cloud account. For example, apikey-TZv2-aa. It should be noted that this is a one-time activity per account. So save your API key somewhere safe for the future. Do not create this for the same account again.
 ```shell
 ibmcloud iam api-key-create <name>
 ```
