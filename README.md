@@ -26,7 +26,7 @@ Create an API key for your respective IBM Cloud account. Replace `<name>` with
 ```shell
 ibmcloud iam api-key-create <name>
 ```
-## Step 4 - When you have an API key
+## Step 4 - Update the script
 ```shell
 cd roks-login
 ```
