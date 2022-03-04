@@ -10,16 +10,23 @@ Git clone this repo to the root of your directory. For Windows, download the ZIP
 ```shell
 git clone https://github.com/aroute/roks-login.git
 ```
-## Step 2
+## Step 2 - Log in to IBM Cloud
 
-### If you do not already have an API key
-If you are doing this for the very first time, you most likely do not have an API key for your IBM Cloud account. To begin, log in to your account using `ibmcloud login` command. If you are an IBMer, use the `ibmcloud login --sso` command. Second, create an API key for your respective IBM Cloud account (see below mentioned command). Replace `<name>` with a name that you can recognize for your IBM Cloud account. For example, apikey-TZv2-aa. It should be noted that this is a one-time activity per account. So save your API key somewhere safe for the future. Do not create this for the same account again.
+```shell
+ibmcloud login
+```
+For IBMers
+```shell
+ibmcloud login --sso
+```
+Select your account and the region to log in.
+
+## Step 3 - Create an API key
+Create an API key for your respective IBM Cloud account. Replace `<name>` with a name tag that you can recognize for your IBM Cloud account. For example, apikey-TZv2-aa. It should be noted that this is a one-time activity per account. So save your API key somewhere safe for the future. Do not create this for the same account again.
 ```shell
 ibmcloud iam api-key-create <name>
 ```
-## Step 3
-
-### When you have an API key
+## Step 4 - When you have an API key
 ```shell
 cd roks-login
 ```
@@ -34,7 +41,7 @@ export IBMCLOUD_ACCOUNT=<locate your account, or BSS ID, found under Manage - Ac
 export IBMCLOUD_REGION=<cluster's region, for example - us-east - see the list of other regions below in appendix>
 export IBMCLOUD_OCP_CLUSTERID=<your ROKS cluster ID>
 ```
-## Step 4
+## Step 5
 Log in to your ROKS cluster.
 ```shell
 ./login.sh
