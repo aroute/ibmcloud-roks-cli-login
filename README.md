@@ -38,19 +38,19 @@ export IBMCLOUD_OCP_CLUSTERID=<your ROKS cluster ID>
 ```
 For Linux, grant execution privileges.
 ```shell
-cd roks-login
-```
-```shell
-chmod +x *.sh
+cd roks-login && chmod +x *.sh
 ```
 
 ## Step 5
 Log in to your ROKS cluster.
+
+MacOS/Linux
 ```shell
 ./login.sh
 ```
+Windows
 ```cmd
-win_login.cmd
+./win_login.cmd
 ```
 
 ## Troubleshooting
