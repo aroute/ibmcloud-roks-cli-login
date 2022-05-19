@@ -27,24 +27,30 @@ Create an API key for your respective IBM Cloud account. Replace `<name>` with
 ibmcloud iam api-key-create <name>
 ```
 ## Step 4 - Update the script
+
+Using a text editor (VS Code), edit `loginenv.sh` (Linux) or `win_loginenv.cmd` (Windows) script, and fill in your respective information.
+```console
+## My IBM Cloud Account
+export IBMCLOUD_APIKEY=<your API key, retrieved above>
+export IBMCLOUD_ACCOUNT=<locate your account, or BSS ID, found under Account drop-down: Manage - Access (IAM): Account ID>
+export IBMCLOUD_REGION=<cluster's region, for example - us-east - see the list of other regions below in appendix>
+export IBMCLOUD_OCP_CLUSTERID=<your ROKS cluster ID>
+```
+For Linux, grant execution privileges.
 ```shell
 cd roks-login
 ```
 ```shell
 chmod +x *.sh
 ```
-Edit `loginenv.sh` script and fill in your respective information.
-```console
-## My IBM Cloud Account
-export IBMCLOUD_APIKEY=<your API key, retrieved above>
-export IBMCLOUD_ACCOUNT=<locate your account, or BSS ID, found under Manage - Account drop-down>
-export IBMCLOUD_REGION=<cluster's region, for example - us-east - see the list of other regions below in appendix>
-export IBMCLOUD_OCP_CLUSTERID=<your ROKS cluster ID>
-```
+
 ## Step 5
 Log in to your ROKS cluster.
 ```shell
 ./login.sh
+```
+```cmd
+win_login.cmd
 ```
 
 ## Troubleshooting
